@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.0.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
@@ -14,6 +15,7 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^5.0.3",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4",
     "node-sass": "^4.12.0"

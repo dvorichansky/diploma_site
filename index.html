@@ -3,52 +3,45 @@
 
 <head>
   <title>Fiway</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="build/css/all.min.css">
+  @@include('./head.html')
 
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <div class="logo">
-            <img class="logo__img" src="build/img/logo.svg" alt="Fiway">
-          </div>
-        </div>
-        <div class="col-9">
-          <div class="menu">
-            <ul class="menu-box">
-              <li class="menu-box__item">Главная</li>
-              <li class="menu-box__item">Услуги</li>
-              <li class="menu-box__item">О нас</li>
-              <li class="menu-box__item menu-box__item_button"><button
-                  class="btn btn-branded btn-medium">Контакты</button></li>
-              <li class="menu-box__item"><i class="ico ico-m ico-search" aria-hidden="true"></i></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  @@include('./header.html')
 
   <section class="section section-top section-top-main">
     <div class="container">
-      <div class="col-6">
-        <h1>Подключение интернета в транспрте</h1>
-        <p>Увеличь пасажиропоток</p>
-        <button class="btn btn-branded btn-medium">Оставить заявку</button>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Подключение интернета в транспорте</h1>
+          <p>Увеличь пасажиропоток</p>
+          <button class="btn btn-branded btn-medium">Оставить заявку</button>
+        </div>
+        <div class="col-lg-6">
+          <div class="top-slider">
+            <div>
+              <img src="img/main-photo__1.jpg" alt="">
+            </div>
+            <div>
+              <img src="img/main-photo__2.jpg" alt="">
+            </div>
+            <div>
+              <img src="img/main-photo__3.jpg" alt="">
+            </div>
+            <div>
+              <img src="img/main-photo__4.jpg" alt="">
+            </div>
+            <div>
+              <img src="img/main-photo__5.jpg" alt="">
+            </div>
+            <div>
+              <img src="img/main-photo__6.jpg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -60,132 +53,112 @@
         <p class="title__description">Наша система обеспечивает безопасное онлайн-подключение. Специалисты круглосуточно
           контролируют качество и надежность услуг.</p>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box box-sentence" onclick="javascript:location.href='/bus.html'">
-            <div class="title box-sentence__title">
-              <h3 class="title__upper">Интернет для автобусов</h3>
-              <p class="title__description">Повысьте сервис, увеличьте пассажиропоток и зарабатывайте больше</p>
+      <div class="sentence-slider">
+        <div class="box-sentence-wrapper">
+          <a href="/bus.html">
+            <div class="box box-sentence">
+              <div class="title box-sentence__title">
+                <h3 class="title__upper">Интернет для автобусов</h3>
+                <p class="title__description">Повысьте сервис, увеличьте пассажиропоток и зарабатывайте больше</p>
+              </div>
+              <div class="box-sentence__images">
+                <img src="img/sentence__1.jpg" alt="">
+              </div>
+              <div class="box-sentence__button">
+                <button class="btn btn-branded btn-medium">Подробнее</button>
+              </div>
             </div>
-            <div class="box-sentence__images">
-              <img src="build/img/sentence__1.jpg" alt="">
-            </div>
-            <div class="box-sentence__button">
-              <button class="btn btn-branded btn-medium">Подробнее</button>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="box box-sentence" onclick="javascript:location.href='/car.html'">
-            <div class="title box-sentence__title">
-              <h3 class="title__upper">Интернет для авто</h3>
-              <p class="title__description">Ведите переговоры, смотрите фильмы и наслаждайтесь современными технологиями
-                в пути</p>
+        <div class="box-sentence-wrapper">
+          <a href="car.html">
+            <div class="box box-sentence">
+              <div class="title box-sentence__title">
+                <h3 class="title__upper">Интернет для авто</h3>
+                <p class="title__description">Ведите переговоры, смотрите фильмы и наслаждайтесь
+                  технологиями
+                  в пути</p>
+              </div>
+              <div class="box-sentence__images">
+                <img src="img/sentence__2.jpg" alt="">
+              </div>
+              <div class="box-sentence__button">
+                <button class="btn btn-branded btn-medium">Подробнее</button>
+              </div>
             </div>
-            <div class="box-sentence__images">
-              <img src="build/img/sentence__2.jpg" alt="">
-            </div>
-            <div class="box-sentence__button">
-              <button class="btn btn-branded btn-medium">Подробнее</button>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="box box-sentence" onclick="javascript:location.href='/public-transport.html'">
-            <div class="title box-sentence__title">
-              <h3 class="title__upper">Интернет для обще- ственного транспорта</h3>
-              <p class="title__description">Обеспечивайте скоростным интернетом до 80-ти пассажиров</p>
+        <div class="box-sentence-wrapper">
+          <a href="/public-transport.html">
+            <div class="box box-sentence">
+              <div class="title box-sentence__title">
+                <h3 class="title__upper">Интернет для обще- ственного транспорта</h3>
+                <p class="title__description">Обеспечивайте скоростным интернетом до 80-ти пассажиров</p>
+              </div>
+              <div class="box-sentence__images">
+                <img src="img/sentence__3.jpg" alt="">
+              </div>
+              <div class="box-sentence__button">
+                <button class="btn btn-branded btn-medium">Подробнее</button>
+              </div>
             </div>
-            <div class="box-sentence__images">
-              <img src="build/img/sentence__3.jpg" alt="">
-            </div>
-            <div class="box-sentence__button">
-              <button class="btn btn-branded btn-medium">Подробнее</button>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="box box-sentence" onclick="javascript:location.href='/bus.html'">
-            <div class="title box-sentence__title">
-              <h3 class="title__upper">Интернет для грузоперевозок</h3>
-              <p class="title__description">Обеспечивайте скоростным интернетом до 80-ти пассажиров</p>
+        <div class="box-sentence-wrapper">
+          <a href="/cargo-transportation.html">
+            <div class="box box-sentence">
+              <div class="title box-sentence__title">
+                <h3 class="title__upper">Интернет для грузоперевозок</h3>
+                <p class="title__description">Обеспечивайте скоростным интернетом до 80-ти пассажиров</p>
+              </div>
+              <div class="box-sentence__images">
+                <img src="img/sentence__4.jpg" alt="">
+              </div>
+              <div class="box-sentence__button">
+                <button class="btn btn-branded btn-medium">Подробнее</button>
+              </div>
             </div>
-            <div class="box-sentence__images">
-              <img src="build/img/sentence__4.jpg" alt="">
-            </div>
-            <div class="box-sentence__button">
-              <button class="btn btn-branded btn-medium">Подробнее</button>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="box box-sentence" onclick="javascript:location.href='/bus.html'">
-            <div class="title box-sentence__title">
-              <h3 class="title__upper">Интернет для <br>яхт и кораблей</h3>
-              <p class="title__description">На связи в море и по всему миру, с GPS контролем за судном</p>
+        <div class="box-sentence-wrapper">
+          <a href="/yachts.html">
+            <div class="box box-sentence">
+              <div class="title box-sentence__title">
+                <h3 class="title__upper">Интернет для <br>яхт и кораблей</h3>
+                <p class="title__description">На связи в море и по всему миру, с GPS контролем за судном</p>
+              </div>
+              <div class="box-sentence__images">
+                <img src="img/sentence__5.jpg" alt="">
+              </div>
+              <div class="box-sentence__button">
+                <button class="btn btn-branded btn-medium">Подробнее</button>
+              </div>
             </div>
-            <div class="box-sentence__images">
-              <img src="build/img/sentence__5.jpg" alt="">
-            </div>
-            <div class="box-sentence__button">
-              <button class="btn btn-branded btn-medium">Подробнее</button>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="box box-sentence" onclick="javascript:location.href='/bus.html'">
-            <div class="title box-sentence__title">
-              <h3 class="title__upper">Медиасервер (MediaBot)</h3>
-              <p class="title__description">Cистема для просмотра фильмов, музыки и видео контента в транспорте Offline
-              </p>
+        <div class="box-sentence-wrapper">
+          <a href="/mediabot.html">
+            <div class="box box-sentence">
+              <div class="title box-sentence__title">
+                <h3 class="title__upper">Медиасервер (MediaBot)</h3>
+                <p class="title__description">Cистема для просмотра фильмов, музыки и видео контента в транспорте
+                  Offline
+                </p>
+              </div>
+              <div class="box-sentence__images">
+                <img src="img/sentence__6.jpg" alt="">
+              </div>
+              <div class="box-sentence__button">
+                <button class="btn btn-branded btn-medium">Подробнее</button>
+              </div>
             </div>
-            <div class="box-sentence__images">
-              <img src="build/img/sentence__6.jpg" alt="">
-            </div>
-            <div class="box-sentence__button">
-              <button class="btn btn-branded btn-medium">Подробнее</button>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-content section-light-gray">
-    <div class="container">
-      <div class="title">
-        <h2 class="title__upper">Преимущества нашего решения</h2>
-      </div>
-      <div class="advantages">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="advantages__item">
-              <img src="build/img/advantages__1.svg" alt="">
-              <p>Контролируем качество и надежность услуг 24/7</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="advantages__item">
-              <img src="build/img/advantages__2.svg" alt="">
-              <p>Скорость интернета <br>до 150 МБит/сек</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="advantages__item">
-              <img src="build/img/advantages__3.svg" alt="">
-              <p>Работает <br>по всему Миру</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="advantages__item">
-              <img src="build/img/advantages__4.svg" alt="">
-              <p>Система работает <br>без участия водителя</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  @@include('./advantages.html')
 
   <section class="section section-content">
     <div class="container">
@@ -193,7 +166,7 @@
         <h2 class="title__upper">Почему интернет от Fiway работает стабильно</h2>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="title text-left">
             <h3 class="title__upper">Мы используем уникальную технологию “Умный интернет”</h3>
           </div>
@@ -208,8 +181,8 @@
             <li>Таким образом на всем маршруте есть качественный интернет!</li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <img src="build/img/principle-works-map.jpg" class="ui-img-radius" alt="">
+        <div class="col-lg-6">
+          <img src="img/principle-works-map.jpg" class="ui-img-radius" alt="">
         </div>
       </div>
     </div>
@@ -218,170 +191,17 @@
   <section class="section section-content section-light-gray">
     <div class="container">
       <div class="slider partners-slider">
-        <div><img src="build/img/partners__1.png" alt=""></div>
-        <div><img src="build/img/partners__2.png" alt=""></div>
-        <div><img src="build/img/partners__3.png" alt=""></div>
-        <div><img src="build/img/partners__4.png" alt=""></div>
-        <div><img src="build/img/partners__5.png" alt=""></div>
+        <div><img src="img/partners__1.png" alt=""></div>
+        <div><img src="img/partners__2.png" alt=""></div>
+        <div><img src="img/partners__3.png" alt=""></div>
+        <div><img src="img/partners__4.png" alt=""></div>
+        <div><img src="img/partners__5.png" alt=""></div>
       </div>
     </div>
   </section>
 
-  <section class="section section-content section-ui">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 align-self-center">
-          <div class="title text-left indent-none">
-            <h2 class="title__upper">Ищите решение мобильного интернета в транспрте?</h2>
-            <p class="title__description">Наша система обеспечивает безопасное онлайн-подключение. Специалисты
-              круглосуточно контролируют качество и надежность услуг.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="main-form">
-            <form action="" class="form">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input class="input" type="text" value placeholder="Имя" name="firstname">
-                    <input class="input" type="text" value placeholder="Email" name="email">
-                  </div>
-                  <div class="col-md-6">
-                    <input class="input" type="text" value placeholder="Фамилия" name="lastname">
-                    <select name="decision_choice" id="decisionChoice">
-                      <option value>Тип продукта</option>
-                      <option value="Интернет для автобусов">Интернет для автобусов</option>
-                      <option value="Интернет для авто">Интернет для авто</option>
-                      <option value="Интернет для общественного транспорта">Интернет для общественного транспорта
-                      </option>
-                      <option value="Интернет для грузоперевозок">Интернет для грузоперевозок</option>
-                      <option value="Интернет для яхт и кораблей">Интернет для яхт и кораблей</option>
-                      <option value="Медиасервер (MediaBot)">Медиасервер (MediaBot)</option>
-                    </select>
-                  </div>
-                  <div class="col-md-12">
-                    <textarea name="tell_us_about_your_mobile_connectivity_needs"
-                      id="tell_us_about_your_mobile_connectivity_needs"
-                      placeholder="Расскажите нам о своих потребностях в мобильной связи" cols="30" rows="10"></textarea>
-                    <button class="btn btn-dark btn-medium btn-center">Отправить запрос</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="footer-item">
-            <div class="footer-item__title title text-left">
-              <h4 class="title__upper">О компании</h4>
-            </div>
-            <div class="footer-item__content">
-              <p>Fiway - компания c по подключению 4G / 3G интернета в по всему миру. Работаем на рынке беспроводного
-                интернета с 2005 года. За год мы помогли улучшить сервис 29 крупных компаний, занимающихся
-                международными автобусными перевозками. Только за сентябрь 2018 года более 90 000 пассажиров
-                воспользовались интернетом, который мы установили в автобусах. Установили первый работающий интернет в
-                скоростных поездах Украины</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="footer-item">
-            <div class="footer-item__title title text-left">
-              <h4 class="title__upper">Меню</h4>
-            </div>
-            <div class="footer-item__content">
-              <ul class="menu-list">
-                <li>
-                  <a href="#">Главная</a>
-                </li>
-                <li>
-                  <a href="#">Услуги</a>
-                </li>
-                <li>
-                  <a href="#">О нас</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-item__title title text-left">
-              <h4 class="title__upper">Мы в соц. сетях</h4>
-            </div>
-            <div class="footer-item__content">
-              <a href="#">
-                <i class="ico ico-l ico-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="#">
-                <i class="ico ico-l ico-telegram" aria-hidden="true"></i>
-              </a>
-              <a href="#">
-                <i class="ico ico-l ico-viber" aria-hidden="true"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="footer-item">
-            <div class="footer-item__title title text-left">
-              <h4 class="title__upper">Связаться</h4>
-            </div>
-            <div class="footer-item__content">
-              <ul class="menu-list">
-                <li>
-                  Fiway Inc.,<br>
-                  <a href="#">
-                    Украина, г. Киев,<br> ул. Богдана Хмельницкого, 67</a>
-                </li>
-                <li>
-                  <a href="#">+38 (067) 623-25-08</a>
-                </li>
-                <li>
-                  <a href="#">info@fiway.net</a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="logo">
-                      <img class="logo__img" src="build/img/logo.svg" alt="Fiway">
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright section-light-gray">
-      <div class="container">
-        <div class="text-center">
-          <h4>© Copyright <span id="thisYear"></span>, Fiway, Inc</h4>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
-  <script src="build/js/all.min.js"></script>
-
+  @@include('./feedback-form.html')
+  @@include('./footer.html')
 
 </body>
 

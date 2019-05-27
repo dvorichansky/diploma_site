@@ -7,12 +7,18 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
+const fileinclude = require('gulp-file-include');
 
 
-const scssFiles = [
-  './src/scss/main.scss',
-  './src/scss/media.scss'
-];
+function htmlInclude() {
+  return gulp.src(['index.html'])
+  .pipe(fileinclude({
+    prefix: '@@',
+    basepath: '@file'
+  }))
+  .pipe(gulp.dest('./build/'));
+}
+
 
 const jsFiles = [
   './src/js/lib.js',
@@ -20,7 +26,7 @@ const jsFiles = [
 ];
 
 function styles() {
-  return gulp.src(scssFiles)
+  return gulp.src('./src/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('all.min.css'))
     .pipe(autoprefixer({
@@ -63,6 +69,7 @@ function watch() {
   gulp.watch('./src/scss/**/*.scss', styles);
   gulp.watch('./src/js/**/*.js', scripts);
   gulp.watch('./src/img/*', images);
+  gulp.watch('./*.html', htmlInclude);
   gulp.watch("./*.html").on('change', browserSync.reload);
 }
 
