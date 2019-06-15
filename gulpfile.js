@@ -10,8 +10,13 @@ const imagemin = require('gulp-imagemin');
 const fileinclude = require('gulp-file-include');
 
 
+const htmlFile = [
+  'index.html',
+  'contact.html'
+];
+
 function htmlInclude() {
-  return gulp.src(['index.html'])
+  return gulp.src(htmlFile)
   .pipe(fileinclude({
     prefix: '@@',
     basepath: '@file'
@@ -63,18 +68,16 @@ function clean() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./build/"
     }
   });
   gulp.watch('./src/scss/**/*.scss', styles);
   gulp.watch('./src/js/**/*.js', scripts);
   gulp.watch('./src/img/*', images);
-  gulp.watch('./*.html', htmlInclude);
-  gulp.watch("./*.html").on('change', browserSync.reload);
+  gulp.watch(['./*.html','./html-components/*.html'], htmlInclude);
+  gulp.watch(['./*.html','./html-components/*.html']).on('change', browserSync.reload);
 }
 
-// gulp.task('styles', styles);
-// gulp.task('scripts', scripts);
 gulp.task('watch', watch);
 gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts)));
 gulp.task('dev', gulp.series('build', 'watch'));
