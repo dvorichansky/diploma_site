@@ -10,9 +10,22 @@ const imagemin = require('gulp-imagemin');
 const fileinclude = require('gulp-file-include');
 
 
-const htmlFile = [
+const htmlFile = [  
+  'about-us.html',
+  'contact.html',  
+  'fair-use-policy.html',
+  'faq.html',
   'index.html',
-  'contact.html'
+  'price.html',
+  'privacy-policy.html',
+  'rights-and-patents.html',
+  'services.html',
+  'terms-of-services.html',
+  'terms-of-use.html',
+  'bus.html',
+  'car.html',
+  'public-transport.html',
+  'yachts.html'
 ];
 
 function htmlInclude() {

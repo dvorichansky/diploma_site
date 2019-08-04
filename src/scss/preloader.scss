@@ -65,7 +65,7 @@ $preloader-size: 200px;
   margin-left: -($preloader-size/2);
 
   @extend .ring-border;
-  border-top-color: $color1;
+  border-top-color: $color2;
 
   @include animation(spin, 2s, linear);
 }
@@ -95,7 +95,7 @@ $preloader-size: 200px;
   bottom: $distance;
 
   @extend .ring-border;
-  border-top-color: $color3;
+  border-top-color: $color2;
 
   @include animation(spin, 1.7s, linear);
 }

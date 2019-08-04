@@ -1,10 +1,10 @@
 <!-- preloader -->
-<!-- <div id="preloader-wrapper">
+<div id="preloader-wrapper">
   <div id="preloader"></div>
-</div> -->
+</div>
 
 <!-- header -->
-<header class="header">
+<header class="header" id="header">
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-6">
@@ -21,79 +21,71 @@
             <span></span>
             <span></span>
           </div>
-          <ul class="menu-box">          
+          
+          <ul class="menu-box">
+            <li class="menu-box__item">
+              <a class="menu-box__item-anchor" href="/index.html" role="menuitem">Головна</a>
+            </li>
             <li class="menu-box__item menu-box__dropdown" role="menu">
               <a class="menu-box__item-anchor" href="/services.html" aria-haspopup="true" aria-expanded="false"
                 role="menuitem">Послуги</a>
               <ul class="menu-box__children-wrapper triangle-elem">
                 <div class="menu-box__children-row">
-                  <div class="menu-box__children-col">
-                    <li class="menu-box__children-item">
-                      <a class="menu-box__children-item-anchor" href="/bus.html">
-                        <img class="menu-box__children-img" src="img/sentence__1.jpg" alt="">
-                        Інтернет для автобусів
-                      </a>
-                    </li>
-                    <li class="menu-box__children-item">
-                      <a class="menu-box__children-item-anchor" href="car.html">
-                        <img class="menu-box__children-img" src="img/sentence__2.jpg" alt="">
-                        Інтернет для авто
-                      </a>
-                    </li>
-                    <li class="menu-box__children-item">
-                      <a class="menu-box__children-item-anchor" href="/public-transport.html">
-                        <img class="menu-box__children-img" src="img/sentence__3.jpg" alt="">
-                        Інтернет для громадського транспорту
-                      </a>
-                    </li>
-                  </div>
-                  <div class="menu-box__children-col">
-                    <li class="menu-box__children-item">
-                      <a class="menu-box__children-item-anchor" href="/cargo-transportation.html">
-                        <img class="menu-box__children-img" src="img/sentence__4.jpg" alt="">
-                        Інтернет для вантажоперевезень
-                      </a>
-                    </li>
-                    <li class="menu-box__children-item">
-                      <a class="menu-box__children-item-anchor" href="/yachts.html">
-                        <img class="menu-box__children-img" src="img/sentence__5.jpg" alt="">
-                        Інтернет для яхт і кораблів
-                      </a>
-                    </li>
-                    <li class="menu-box__children-item">
-                      <a class="menu-box__children-item-anchor" href="/mediabot.html">
-                        <img class="menu-box__children-img" src="img/sentence__6.jpg" alt="">
-                        Медіасервер (MediaBot)
-                      </a>
-                    </li>
-                  </div>
+                  <li class="menu-box__children-item">
+                    <a class="menu-box__children-item-anchor" href="/bus.html">
+                      <img class="menu-box__children-img" src="img/sentence__1.jpg" alt="">
+                      Інтернет для автобусів
+                    </a>
+                  </li>
+                  <li class="menu-box__children-item">
+                    <a class="menu-box__children-item-anchor" href="car.html">
+                      <img class="menu-box__children-img" src="img/sentence__2.jpg" alt="">
+                      Інтернет для авто
+                    </a>
+                  </li>
+                  <li class="menu-box__children-item">
+                    <a class="menu-box__children-item-anchor" href="/public-transport.html">
+                      <img class="menu-box__children-img" src="img/sentence__3.jpg" alt="">
+                      Інтернет для громадського транспорту
+                    </a>
+                  </li>
+                  <li class="menu-box__children-item">
+                    <a class="menu-box__children-item-anchor" href="/yachts.html">
+                      <img class="menu-box__children-img" src="img/sentence__5.jpg" alt="">
+                      Інтернет для яхт і кораблів
+                    </a>
+                  </li>
                 </div>
               </ul>
-            </li>            
-            <li class="menu-box__item">
-              <a class="menu-box__item-anchor" href="/about-us.html" role="menuitem">Про нас</a>
             </li>
             <li class="menu-box__item">
               <a class="menu-box__item-anchor" href="/price.html" role="menuitem">Ціни</a>
             </li>
-            <li class="menu-box__item menu-box__item_button">
-              <a class="menu-box__item-anchor" href="/contact.html" role="menuitem">
-                <button class="btn btn-branded btn-medium">Контакти</button>
-              </a>
+            <li class="menu-box__item">
+              <a class="menu-box__item-anchor" href="/about-us.html" role="menuitem">Про нас</a>
+            </li>
+            <li class="menu-box__item">
+              <a class="menu-box__item-anchor" href="/contact.html" role="menuitem">Контакти</a>
             </li>
           </ul>
           <div class="header__box search-box">
-            <i class="ico ico-m ico-search" aria-hidden="true"></i>
+            <i class="ico ico-m ico-search" id="search" aria-hidden="true"></i>
+            <div class="search-wrapper">
+              <input class="input-search" type="text" placeholder="Поиск...">
+              <button class="button-search">
+                  <i class="ico ico-m ico-search" aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
           <div class="header__box lang-box">
-            <div class="lang-box__button">RU</div>
+            <div class="lang-box__button">UA</div>
             <div class="lang-box__list-wrapper triangle-elem">
               <ul class="lang-box__list">
                 <li>EN</li>
-                <li>UA</li>
+                <li>RU</li>
                 <li>PL</li>
               </ul>
-            </div>           
+            </div>
           </div>
         </nav>
       </div>
